@@ -666,21 +666,26 @@ main {
   font-style: italic;
 }
 
-/* ---------- Our Work — Cover ---------- */
-.work-cover {
+/* ---------- Our Work — Hero Split ---------- */
+.work-hero-split {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  min-height: 600px;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.work-hero-image {
   position: relative;
-  max-height: 600px;
   overflow: hidden;
   background-color: var(--color-near-black);
 }
 
-.work-cover img {
+.work-hero-image img {
   width: 100%;
-  max-height: 600px;
+  height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   display: block;
-  opacity: 0.85;
 }
 
 .work-cover-label {
@@ -695,35 +700,47 @@ main {
 
 .work-cover-title-sm {
   font-family: var(--font-sans);
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
   font-weight: 300;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .work-cover-title-lg {
   font-family: var(--font-sans);
-  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-top: -0.1em;
+  letter-spacing: 0.02em;
+  margin-top: -0.05em;
 }
 
 .work-cover-caption {
   position: absolute;
   bottom: 1rem;
-  right: 1.5rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  color: rgba(255,255,255,0.65);
+  right: 1.2rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: rgba(255,255,255,0.6);
   font-style: italic;
 }
 
-/* ---------- Our Work — Intro ---------- */
-.work-intro {
-  padding: 4rem 0 3rem;
-  border-bottom: 1px solid var(--color-light-gray);
+.work-hero-text {
+  padding: 3.5rem 3rem;
+  background-color: var(--color-off-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-hero-text p {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--color-dark-gray);
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+.work-hero-text p:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------- Our Work — Category Nav ---------- */
@@ -1005,10 +1022,22 @@ footer .footer-copy {
     flex-wrap: nowrap;
   }
 
-  /* Work cover label */
+  /* Work hero split stacks on mobile */
+  .work-hero-split {
+    grid-template-columns: 1fr;
+  }
+
+  .work-hero-image {
+    min-height: 55vw;
+  }
+
   .work-cover-label {
     bottom: 1.5rem;
     left: 1.5rem;
+  }
+
+  .work-hero-text {
+    padding: 2.5rem 1.5rem;
   }
 
   /* Work category nav scrollable */
