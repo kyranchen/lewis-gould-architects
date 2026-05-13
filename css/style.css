@@ -217,6 +217,53 @@ nav > ul > li > a.active {
   border-bottom: 1px solid var(--color-light-gray);
 }
 
+/* Full-bleed photo hero variant */
+.hero.hero-photo {
+  position: relative;
+  background-image: url('../images/hero-venice.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-near-black);
+  border-bottom: none;
+  padding: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 18, 16, 0.52);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: calc(90vh - var(--nav-height));
+  padding: 4rem 2rem;
+}
+
+.hero.hero-photo .hero-firm-name {
+  color: var(--color-white);
+}
+
+.hero.hero-photo .hero-tagline {
+  color: rgba(255,255,255,0.75);
+}
+
+.hero.hero-photo .hero-divider {
+  background-color: rgba(255,255,255,0.35);
+}
+
+.hero.hero-photo .hero-intro {
+  color: rgba(255,255,255,0.88);
+}
+
 .hero-firm-name {
   font-family: var(--font-serif);
   font-size: clamp(2rem, 5vw, 3.5rem);
@@ -287,6 +334,26 @@ nav > ul > li > a.active {
 .btn-outline:hover {
   border-color: var(--color-dark-gray);
   color: var(--color-near-black);
+}
+
+/* Light outline variant for use on dark/photo backgrounds */
+.btn-outline-light {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-color: transparent;
+  color: rgba(255,255,255,0.88);
+  border: 1px solid rgba(255,255,255,0.45);
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.8);
+  color: var(--color-white);
 }
 
 /* ---------- Page Header (interior pages) ---------- */
@@ -599,6 +666,129 @@ main {
   font-style: italic;
 }
 
+/* ---------- Our Work — Cover ---------- */
+.work-cover {
+  position: relative;
+  max-height: 600px;
+  overflow: hidden;
+  background-color: var(--color-near-black);
+}
+
+.work-cover img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  opacity: 0.85;
+}
+
+.work-cover-label {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  color: var(--color-white);
+}
+
+.work-cover-title-sm {
+  font-family: var(--font-sans);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-cover-title-lg {
+  font-family: var(--font-sans);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: -0.1em;
+}
+
+.work-cover-caption {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.65);
+  font-style: italic;
+}
+
+/* ---------- Our Work — Intro ---------- */
+.work-intro {
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+/* ---------- Our Work — Category Nav ---------- */
+.work-cat-nav {
+  background-color: var(--color-off-white);
+  border-bottom: 1px solid var(--color-light-gray);
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 50;
+}
+
+.work-cat-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.work-cat-nav ul li a {
+  display: block;
+  padding: 1rem 1.1rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-mid-gray);
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.work-cat-nav ul li a:hover {
+  color: var(--color-near-black);
+  border-bottom-color: var(--color-accent);
+}
+
+/* ---------- Our Work — Sections ---------- */
+.work-section {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.work-section:last-child {
+  border-bottom: none;
+}
+
+.work-section-header {
+  max-width: var(--max-width);
+  margin: 0 auto 2.5rem;
+  padding: 0 2rem;
+}
+
+.work-section-header h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: normal;
+  color: var(--color-near-black);
+  letter-spacing: 0.02em;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
 /* ---------- Publications Page ---------- */
 .publications-list {
   padding-top: 0;
@@ -813,6 +1003,18 @@ footer .footer-copy {
   /* Sub-nav scrollable */
   .sub-nav ul {
     flex-wrap: nowrap;
+  }
+
+  /* Work cover label */
+  .work-cover-label {
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  /* Work category nav scrollable */
+  .work-cat-nav ul {
+    flex-wrap: nowrap;
+    padding: 0 1rem;
   }
 }
 
