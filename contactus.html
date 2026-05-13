@@ -3,104 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michele Lewis, Jan Gould, Lewis and Gould. New York City, Westchester, Larchmont, Mamaroneck, New York.</title>
+  <title>Contact Us — Lewis &amp; Gould Architects</title>
   <meta name="description" content="Lewis and Gould Architects, Principals Michele Lewis and Jan Gould are registered architects designing in New York City, NY, and Westchester. Specializing in residential and commercial architecture and interior design." />
   <meta name="keywords" content="architecture, architects, new york architects, interior design, contact, Lewis and Gould, Michele Lewis, Jan Gould" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<div class="site-wrapper">
-
-  <!-- ===== SIDEBAR ===== -->
-  <aside class="sidebar">
-    <div class="logo-area">
-      <a href="index.html" class="logo-link">
-        <div class="logo-wordmark"><span class="logo-lewis">LEWIS</span><span class="logo-and">AND</span><span class="logo-gould">GOULD</span></div>
-        <div class="logo-sub">Architecture&nbsp;&nbsp;Planning&nbsp;&nbsp;Interiors</div>
-      </a>
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="site-logo">Lewis &amp; Gould Architects</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li class="dropdown">
+            <a href="aboutus.html" class="dropdown-toggle">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a href="aboutus.html">Overview</a></li>
+              <li><a href="aboutus_jan.html">Jan Gould</a></li>
+              <li><a href="aboutus_michele.html">Michele Lewis</a></li>
+              <li><a href="aboutus_publications.html">Publications</a></li>
+            </ul>
+          </li>
+          <li><a href="ourperspective.html">Our Perspective</a></li>
+          <li><a href="ourwork.html">Our Work</a></li>
+          <li><a href="contactus.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <nav class="main-nav" aria-label="Main">
-      <a href="aboutus.html">About Us</a>
-      <a href="contactus.html" class="active">Contact Us</a>
-      <a href="ourperspective.html">Our Perspective</a>
-      <a href="ourwork.html">Our Work</a>
-    </nav>
+  <div class="page-header">
+    <h1>Contact Us</h1>
+    <p class="subtitle">We'd Love to Hear From You</p>
+  </div>
 
-    <div class="sub-nav"><!-- no sub-nav for contact --></div>
+  <main>
+    <div class="contact-layout">
 
-    <div class="sidebar-bottom">
-      Member: US Green Building Council<br />
-      Member: 1% Solution Public Architecture<br />
-      Member: American Institute of Architects
-    </div>
-  </aside>
-
-  <!-- ===== MAIN CONTENT ===== -->
-  <main class="main-content">
-
-    <!-- Contact info block -->
-    <div class="contact-info-panel">
-      <div class="contact-row">
-        <span class="contact-label">Address:</span>
-        <span class="contact-value">19 West 37th Street<br />New York, New York 10018</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Phone:</span>
-        <span class="contact-value">212-354-1999</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Principals:</span>
-        <span class="contact-value">
-          Mr. Jan Gould, AIA, NCARB<br />
+      <div class="contact-info">
+        <h2>Lewis &amp; Gould Architects</h2>
+        <address>
+          19 West 37th Street<br />
+          New York, New York 10018<br />
+          <br />
+          Tel: <a href="tel:2123541999">212-354-1999</a><br />
+          <br />
+          <strong>Jan Gould, AIA, NCARB</strong><br />
           <a href="mailto:jgould@lewisandgould.com">jgould@lewisandgould.com</a><br />
           <br />
-          Ms. Michele Lewis, AIA<br />
-          <a href="mailto:mlewis@lewisandgould.com">mlewis@lewisandgould.com</a>
-        </span>
+          <strong>Michele Lewis, AIA</strong><br />
+          <a href="mailto:mlewis@lewisandgould.com">mlewis@lewisandgould.com</a><br />
+          <br />
+          <strong>General inquiries</strong><br />
+          <a href="mailto:architects@lewisandgould.com">architects@lewisandgould.com</a>
+        </address>
       </div>
-      <div class="contact-row">
-        <span class="contact-label">Employment<br />inquiries:</span>
-        <span class="contact-value"><a href="mailto:hr@lewisandgould.com">hr@lewisandgould.com</a></span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">General<br />Mailbox:</span>
-        <span class="contact-value"><a href="mailto:architects@lewisandgould.com">architects@lewisandgould.com</a></span>
-      </div>
-    </div>
 
-    <!-- Large image with title overlay -->
-    <div class="image-panel" style="min-height:200px; flex-shrink:0;">
-      <img src="images/contactus-hero.jpg" alt="Lewis and Gould Architects — Contact"
-           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-      <div class="img-placeholder" style="display:none; min-height:200px; background:linear-gradient(135deg,#8fa5b0 0%,#6a8c9a 100%);">
-        <div class="page-title">
-          <span class="pt-small">Contact</span>
-          <span class="pt-large">Us[!]</span>
+      <form class="contact-form" action="" method="post" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" placeholder="Your full name" autocomplete="name" required />
         </div>
-      </div>
-      <div class="page-title">
-        <span class="pt-small">Contact</span>
-        <span class="pt-large">Us[!]</span>
-      </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+        </div>
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" name="subject" placeholder="How can we help?" />
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" placeholder="Tell us about your project or inquiry…" required></textarea>
+        </div>
+        <div class="form-submit-area">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note">We'll respond as soon as possible.</p>
+        </div>
+      </form>
+
     </div>
-
-    <!-- Photo strip -->
-    <div class="thumb-strip">
-      <img src="images/contact-thumb-1.jpg" alt="" onerror="this.outerHTML='<div class=\'thumb-ph\'></div>'" />
-      <img src="images/contact-thumb-2.jpg" alt="" onerror="this.outerHTML='<div class=\'thumb-ph\'></div>'" />
-      <img src="images/contact-thumb-3.jpg" alt="" onerror="this.outerHTML='<div class=\'thumb-ph\'></div>'" />
-      <img src="images/contact-thumb-4.jpg" alt="" onerror="this.outerHTML='<div class=\'thumb-ph\'></div>'" />
-    </div>
-
-    <footer class="site-footer">
-      <p>All Contents &copy; 2025 Lewis and Gould Architects PC. All Rights Reserved.</p>
-      <p><a href="mailto:architects@lewisandgould.com">architects@lewisandgould.com</a></p>
-    </footer>
-
   </main>
 
-</div>
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-firm">Lewis &amp; Gould Architects</p>
+      <p class="footer-tagline">Architecture &middot; Planning &middot; Interiors &middot; New York</p>
+      <ul class="footer-links">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="ourperspective.html">Our Perspective</a></li>
+        <li><a href="ourwork.html">Our Work</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2025 Lewis &amp; Gould Architects PC. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
