@@ -3,89 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michele Lewis, AIA — Lewis &amp; Gould Architects</title>
+  <title>Michele Lewis AIA — Lewis and Gould Architects, New York</title>
   <meta name="description" content="Lewis and Gould Architects, Principals Michele Lewis and Jan Gould are registered architects designing in New York City, NY, and Westchester. Specializing in residential and commercial architecture and interior design." />
-  <meta name="keywords" content="architecture, architects, new york architects, interior design, residential design, renovation, sustainable design, school design, affordable housing" />
+  <meta name="keywords" content="architecture, architects, new york architects, interior design, residential design, renovation, sustainable design, Michele Lewis, AIA" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
-  <header>
-    <div class="nav-inner">
-      <a href="index.html" class="site-logo">Lewis &amp; Gould Architects</a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
-        <span></span><span></span><span></span>
-      </label>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li class="dropdown">
-            <a href="aboutus.html" class="dropdown-toggle active">About Us</a>
-            <ul class="dropdown-menu">
-              <li><a href="aboutus.html">Overview</a></li>
-              <li><a href="aboutus_jan.html">Jan Gould</a></li>
-              <li><a href="aboutus_michele.html" class="active">Michele Lewis</a></li>
-              <li><a href="aboutus_publications.html">Publications</a></li>
-            </ul>
-          </li>
-          <li><a href="ourperspective.html">Our Perspective</a></li>
-          <li><a href="ourwork.html">Our Work</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
-        </ul>
-      </nav>
+<div class="site-wrapper">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div class="logo-area">
+      <a href="index.html" class="logo-link">
+        <div class="logo-wordmark"><span class="logo-lewis">LEWIS</span><span class="logo-and">AND</span><span class="logo-gould">GOULD</span></div>
+        <div class="logo-sub">Architecture&nbsp;&nbsp;Planning&nbsp;&nbsp;Interiors</div>
+      </a>
     </div>
-  </header>
 
-  <!-- ===== SUB-NAV ===== -->
-  <nav class="sub-nav" aria-label="About Us sections">
-    <ul>
-      <li><a href="aboutus.html">Overview</a></li>
-      <li><a href="aboutus_jan.html">Jan Gould</a></li>
-      <li><a href="aboutus_michele.html" class="active">Michele Lewis</a></li>
-      <li><a href="aboutus_publications.html">Publications</a></li>
-    </ul>
-  </nav>
+    <nav class="main-nav" aria-label="Main">
+      <a href="aboutus.html" class="active">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="ourperspective.html">Our Perspective</a>
+      <a href="ourwork.html">Our Work</a>
+    </nav>
 
-  <!-- ===== PAGE HEADER ===== -->
-  <div class="page-header">
-    <h1>Michele Lewis</h1>
-    <p class="subtitle">Principal &middot; AIA</p>
-  </div>
+    <nav class="sub-nav" aria-label="About Us">
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><span class="section-label">Our Principals</span></li>
+        <li class="sub-item"><a href="aboutus_jan.html">Jan Gould</a></li>
+        <li class="sub-item"><a href="aboutus_michele.html" class="active">Michele Lewis</a></li>
+        <li><a href="aboutus_publications.html">Publications</a></li>
+        <li><a href="aboutus_publications.html">Recognition &amp; Involvement</a></li>
+      </ul>
+    </nav>
 
-  <!-- ===== CONTENT ===== -->
-  <main>
-    <div class="bio-layout">
+    <div class="sidebar-bottom">
+      Member: US Green Building Council<br />
+      Member: 1% Solution Public Architecture<br />
+      Member: American Institute of Architects
+    </div>
+  </aside>
 
-      <div class="bio-photo">
-        <img src="images/michele.jpg" alt="Portrait of Michele Lewis, AIA" />
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <div class="split-panels">
+      <!-- Photo -->
+      <div class="image-panel">
+        <img src="images/michele.jpg" alt="Michele Lewis AIA"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="img-placeholder" style="display:none;"></div>
+        <div class="page-title">
+          <span class="pt-small">Michele</span>
+          <span class="pt-large">Lewis</span>
+        </div>
       </div>
 
-      <div class="bio-text">
-        <h2>Michele Lewis</h2>
-        <p class="bio-title">Principal &middot; AIA</p>
-        <p class="placeholder-note">
-          Bio coming soon — please check back.
-        </p>
+      <!-- Bio text -->
+      <div class="text-panel">
+        <p><strong>Michele Lewis, AIA</strong></p>
+        <p><em>Bio coming soon — please check back.</em></p>
       </div>
-
     </div>
+
+    <footer class="site-footer">
+      <p>19 West 37th Street, New York, NY 10018 &nbsp;&bull;&nbsp; Tel. 212-354-1999</p>
+      <p><a href="mailto:architects@lewisandgould.com">architects@lewisandgould.com</a></p>
+    </footer>
+
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="footer-inner">
-      <p class="footer-firm">Lewis &amp; Gould Architects</p>
-      <p class="footer-tagline">Architecture &middot; Planning &middot; Interiors &middot; New York</p>
-      <ul class="footer-links">
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="ourperspective.html">Our Perspective</a></li>
-        <li><a href="ourwork.html">Our Work</a></li>
-        <li><a href="contactus.html">Contact</a></li>
-      </ul>
-      <p class="footer-copy">&copy; 2025 Lewis &amp; Gould Architects. All rights reserved.</p>
-    </div>
-  </footer>
-
+</div>
 </body>
 </html>
