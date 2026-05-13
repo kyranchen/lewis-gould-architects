@@ -108,11 +108,14 @@ nav > ul {
   display: flex;
   list-style: none;
   gap: 0.25rem;
-  align-items: center;
+  align-items: stretch;
+  height: 100%;
 }
 
 nav > ul > li {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 nav > ul > li > a {
