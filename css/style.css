@@ -599,6 +599,78 @@ main {
   font-style: italic;
 }
 
+/* ---------- Publications Page ---------- */
+.publications-list {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.publications-list h2 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: normal;
+  color: var(--color-near-black);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+}
+
+.pub-year-group {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.pub-year-group:last-child {
+  border-bottom: none;
+}
+
+.pub-year-group h3 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: var(--color-accent);
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.pub-year-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-year-group ul li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-dark-gray);
+  padding: 0.35rem 0 0.35rem 1.2rem;
+  position: relative;
+  border-bottom: 1px solid var(--color-off-white);
+}
+
+.pub-year-group ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-lt);
+  font-size: 0.85rem;
+}
+
+/* ---------- Contact Info paragraphs ---------- */
+.contact-info p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-dark-gray);
+  margin-bottom: 1.2rem;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info .section-rule {
+  margin: 1.5rem 0;
+}
+
 /* ---------- Footer ---------- */
 footer {
   background-color: var(--color-near-black);
